@@ -1,0 +1,173 @@
+/* Color Theme Swatches in Hex 
+.My-Color-Theme-1-hex { color: #EC0800; }
+.My-Color-Theme-2-hex { color: #CA0700; }
+.My-Color-Theme-3-hex { color: #F50800; }
+.My-Color-Theme-4-hex { color: #A80600; }
+.My-Color-Theme-5-hex { color: #000000; }
+.My-Color-Theme-6-hex { color: #640300; }
+
+/* Color Theme Swatches in RGBA 
+.My-Color-Theme-1-rgba { color: rgba(236, 8, 0, 1); }
+.My-Color-Theme-2-rgba { color: rgba(202, 7, 0, 1); }
+.My-Color-Theme-3-rgba { color: rgba(245, 8, 0, 1); }
+.My-Color-Theme-4-rgba { color: rgba(168, 6, 0, 1); }
+.My-Color-Theme-5-rgba { color: rgba(0, 0, 0, 1); }
+.My-Color-Theme-6-rgba { color: rgba(100, 3, 0, 1); }
+
+/* Color Theme Swatches in HSLA 
+.My-Color-Theme-1-hsla { color: hsla(2, 100, 46, 1); }
+.My-Color-Theme-2-hsla { color: hsla(2, 100, 39, 1); }
+.My-Color-Theme-3-hsla { color: hsla(1, 100, 48, 1); }
+.My-Color-Theme-4-hsla { color: hsla(2, 100, 32, 1); }
+.My-Color-Theme-5-hsla { color: hsla(0, 0, 0, 1); }
+.My-Color-Theme-6-hsla { color: hsla(1, 100, 19, 1); }
+*/
+ul {
+  /* navigation bar */
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+
+  border-radius: 8px;
+  margin: 0 auto;
+  width: 732px;
+  height: 34px;
+  background-color: #2f2d2d;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+h1 {
+  /* title */
+  font-family: "honk", sans-serif;
+  font-size: 48px;
+  margin: 20px;
+  text-align: center;
+  color: #2f2d2d;
+}
+footer {
+  /* footer */
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  overflow: hidden;
+
+  border-radius: 8px;
+  margin: 0 auto;
+  width: 732px;
+  height: 34px;
+  background-color: #2f2d2d;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+header {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+#idfoot {
+  /* footer text */
+  color: white;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+}
+ul li a {
+  /* navigation links */
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul li {
+  /* list items */
+  float: none;
+}
+ul li a:hover {
+  background-color: #333;
+  border-radius: 8px;
+}
+
+ul li a.active {
+  color: white;
+  border-radius: 8px;
+}
+
+ul li a:visited {
+  color: white;
+  border-radius: 8px;
+}
+.zigzag {
+  /* container for zigzag sections */
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  display: grid;
+  gap: 64px; /* space between rows */
+}
+
+.row {
+  /* each zigzag row */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two columns */
+  gap: 40px;
+  align-items: center; /* vertically center content */
+}
+
+.img {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  display: block;
+}
+
+.copy h3 {
+  /* section headings */
+  margin: 0 0 12px;
+}
+/* Mobile */
+@media (max-width: 800px) {
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 12px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+
+  /* stack the nav links and make them readable, not huge */
+  ul#navbar {
+    flex-direction: column;
+    align-items: stretch; /* each link fills width */
+    gap: 0;
+    padding: 8px 0;
+  }
+
+  ul#navbar li a {
+    font-size: 18px; /* was 40px */
+    padding: 12px 14px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+  }
+  ul#navbar li:last-child a {
+    border-bottom: none;
+  }
+
+  .zigzag {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 24px 12px;
+  }
+  .row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .img {
+    width: 100%;
+    height: auto;
+  }
+}
