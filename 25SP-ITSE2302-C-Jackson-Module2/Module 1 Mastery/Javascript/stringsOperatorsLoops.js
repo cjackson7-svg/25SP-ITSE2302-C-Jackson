@@ -6,22 +6,30 @@ var fam = "The family has 6 relatives living in the San Antonio area, and 2 more
 var famTwo = "This summer they plan on traveling to El Paso to visit as many family members as possible.";
 
 console.log(osc.indexOf("4")); // returns the position of the first occurrence of a specified value in a string
-var oscKids = osc.indexOf("5"); // total number of kids
-var oscKidsTotal = parseInt("5", 10); // converts a string to an integer
-console.log(oscKidsTotal); // officail total number of kids
 
-var twins = osc.indexOf("4");
-var twinsTotal = parseInt("4", 10); // converts a string to an integer
-console.log(twinsTotal); // official total number of twins
+// 5
+var oscKidsIndex = osc.indexOf("5"); 
+var oscKidsString = osc.slice(oscKidsIndex, oscKidsIndex + 1);
+var oscKidsTotal = parseInt(oscKidsString, 10);
+console.log(oscKidsTotal);
 
-var oldest = osc.indexOf("1");
-var oldestTotal = parseInt("1", 10); // converts a string to an integer
-console.log(oldestTotal); // official total age of oldest child
+// 4
+var twinsIndex = osc.indexOf("4");
+var twinsString = osc.slice(twinsIndex, twinsIndex + 1);
+var twinsTotal = parseInt(twinsString, 10);
+console.log(twinsTotal);
 
-var rel = fam.indexOf("6");
-var relTotal = parseInt("6", 10); // converts a string to an integer
-console.log(relTotal); // official total number of relatives living in San Antonio area
+// 1
+var oldestIndex = osc.indexOf("1");
+var oldestString = osc.slice(oldestIndex, oldestIndex + 1);
+var oldestTotal = parseInt(oldestString, 10);
+console.log(oldestTotal);
 
+// 6
+var relIndex = fam.indexOf("6");
+var relString = fam.slice(relIndex, relIndex + 1);
+var relTotal = parseInt(relString, 10);
+console.log(relTotal);
 
 
 var relTwo = fam.indexOf("2");
