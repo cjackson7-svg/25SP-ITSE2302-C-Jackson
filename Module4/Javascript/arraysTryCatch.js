@@ -9,9 +9,11 @@ siteTopics.push("Mindset"); // Add a new topic to the end of the array
 console.log("The legnth of the Site Topics array is " + siteTopics.length);
 
 var i =0; // Initialize counter variable
-for (i = 0; i < siteTopics.length; i++) { // Loop through each element in the array
-    console.log( siteTopics[i]);    
+while (i < siteTopics.length) { // Loop through the array
+    console.log("Topic " + (i + 1) + ": " + siteTopics[i]);
+    i++;
 }
+
 
 dayNames.reverse(); // Reverse the order of the array
 console.log("The reversed Day Names array is: " + dayNames); // Log the reversed array
@@ -31,10 +33,6 @@ try {
 }
 
 //finally block
-try {
-    var Name = (firstName.toUpperCase) + (birthyear)(); // This will cause an error
-} catch (error) {
-    console.error("An error occurred: " + error.message);     // Log the error message  
-} finally { // This block will always execute
+finally { // This block will always execute
     console.log(firstName + " was born in the year " + birthyear + ". I think the day was either a " + dayNames[1] + " or " + dayNames[3] + ".");
 }
