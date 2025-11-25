@@ -15,7 +15,7 @@ function handleFormSubmit(event) {
     var total = calculateTotal(); // Function 3
 
     // Get the form input values
-    var firstName = document.getElementById('fname').value.trim();
+    var firstName = document.getElementById('fname').value.trim(); 
     var lastName = document.getElementById('lname').value.trim();
     var comments = document.getElementById('comments').value.trim();
     var classTime = document.getElementById('class_time').value;
@@ -23,7 +23,13 @@ function handleFormSubmit(event) {
     // Age radio buttons
     var ageRadio = document.querySelector('input[name="age_confirmation"]:checked');
     var ageAnswer = ageRadio ? ageRadio.value : 'not selected';
-
+ console.log(' Form Submission'); // For demonstration, log the values to the console
+    console.log('First Name:', firstName);
+    console.log('Last Name:', lastName);
+    console.log('Comments:', comments);
+    console.log('Class Time:', classTime);
+    console.log('Age Confirmation:', ageAnswer);
+    console.log('Estimated Total:', '$' + total.toFixed(2));
 
 
     //show a confirmation
