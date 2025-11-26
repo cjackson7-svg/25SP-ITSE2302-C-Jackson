@@ -1,86 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fit Girls Challenge</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Girls Challenge - Contact Us</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Honk&display=swap"
       rel="stylesheet"
-    />
+    >
     <script src="Javascript/formvaldation.js" defer></script>
   </head>
-   <body>
+  <body>
     <header>
       <h1>Fit Girls Challenge</h1>
     </header>
+
     <nav>
       <!-- navigation bar -->
       <ul id="navbar">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href= "contactus.html">Contact</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#news">News</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+        <li><a href="index.html#about">About</a></li>
       </ul>
     </nav>
+
     <main>
-        <!-- contact form  -->
-    <div class="contact-form">
-      <h2>Contact Us</h2>
-     <form class="sign_up" id="fillform">
-  <label for="fname">First name:</label><br> <!-- added form text fields names -->
-  <input type="text" id="fname" name="fname" value=""><br>
-  <br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value=""><br><br> <!--end of name text fields-->
-  <br>
-  <!-- added radio buttons for age confirmation -->
-  <label for="age_related">Are you over 18?</label><br>
-  <input type="radio" id="over_18" name="age_confirmation" value="yes">
-  <label for="over_18">Yes</label><br><br>
-  <input type="radio" id="under_18" name="age_confirmation" value="no">
-  <label for="under_18">No</label><br><br>
-  <br>
-  <br>
-  <label for="add_on">Services are available as add-on: </label><br>
-    <input type="checkbox" id="nutrition" name="nutrition" value="10">
-    <label for="nutrition"> Nutrition Plans $10</label><br>
-    <input type="checkbox" id="personal_training" name="personal_training" value="50">
-    <label for="personal_training"> Personal Training $50</label><br>
-    <input type="checkbox" id="group_classes" name="group_classes" value="20">
-    <label for="group_classes"> Group Classes $20</label><br><br>
-    <label for="class_est">Estimated Total Price: </label>
-    <input type="text" id="class_est" placeholder="$0.00">
-    <input type="button" id="prices" name="checkprices" value="Total">
-    <br><br>
+      <!-- contact form  -->
+      <div class="contact-form">
+        <h2>Contact Us</h2>
 
-    <!-- added dropdown for membership class time -->
-  <br>
-  <label for="class_time">Membership Class Time</label>
-  <select id="class_time" name="preferred_time">
-    <option value="morning">Morning</option>
-    <option value="afternoon">Afternoon</option>
-    <option value="evening">Evening</option>
-  </select>
-<label for="comments">Comments:</label><br>
-    <br>        
-    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
-  <br><br>
-  <br>
+        <form class="sign_up" id="fillform"> 
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value=""><br><br>
 
-  <input type="reset" value="Reset"> <!-- added reset button -->
-  <label>&nbsp;&nbsp;&nbsp;&nbsp;</label> <!-- spacing between buttons -->
-    <input type="submit" value="Submit">
-</form> 
-      
-     </div>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value=""><br><br>
+
+          <!-- age confirmation -->
+          <label>Are you over 18?</label><br>
+          <input type="radio" id="over_18" name="age_confirmation" value="yes">
+          <label for="over_18">Yes</label><br><br>
+
+          <input type="radio" id="under_18" name="age_confirmation" value="no">
+          <label for="under_18">No</label><br><br>
+
+          <!-- add-on services -->
+          <label>Services are available as add-ons:</label><br>
+          <input type="checkbox" id="nutrition" name="nutrition" value="10">
+          <label for="nutrition">Nutrition Plans $10</label><br>
+
+          <input type="checkbox" id="personal_training" name="personal_training" value="50">
+          <label for="personal_training">Personal Training $50</label><br>
+
+          <input type="checkbox" id="group_classes" name="group_classes" value="20">
+          <label for="group_classes">Group Classes $20</label><br><br>
+
+          <label for="class_est">Estimated Total Price:</label>
+          <input type="text" id="class_est" placeholder="$0.00">
+          <input type="button" id="prices" name="checkprices" value="Total"><br><br>
+
+          <!-- membership time -->
+          <label for="class_time">Membership Class Time</label>
+          <select id="class_time" name="preferred_time">
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+          </select><br><br>
+
+          <!-- comments -->
+          <label for="comments">Comments:</label><br>
+          <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+          <input type="reset" value="Reset">
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
     </main>
+
     <footer>
       <p id="idfoot">&copy; Chamoa Jackson 2025</p>
-      <!-- footer text -->
     </footer>
   </body>
 </html>
